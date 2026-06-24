@@ -1,17 +1,20 @@
 import 'package:flutter/material.dart';
+import '../l10n/generated/ottt_localizations.dart';
 
 class MenuScreen extends StatelessWidget {
   const MenuScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
+
     return Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'TicTacToe',
+              strings.appTitle,
               style: Theme.of(context).textTheme.headlineMedium,
             ),
             const SizedBox(height: 32),
@@ -20,7 +23,7 @@ class MenuScreen extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.people),
-              label: const Text('Play with friend'),
+              label: Text(strings.playWithFriend),
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(250, 0),
                 padding: const EdgeInsets.symmetric(vertical: 16),
@@ -33,7 +36,7 @@ class MenuScreen extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.computer),
-              label: const Text('Play with AI'),
+              label: Text(strings.playWithAI),
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(250, 0),
                 padding: const EdgeInsets.symmetric(vertical: 16),
@@ -46,7 +49,7 @@ class MenuScreen extends StatelessWidget {
             ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(Icons.info_outline),
-              label: const Text('Reference'),
+              label: Text(strings.reference),
               style: ElevatedButton.styleFrom(
                 minimumSize: const Size(250, 0),
                 padding: const EdgeInsets.symmetric(vertical: 16),
