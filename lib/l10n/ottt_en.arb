@@ -3,5 +3,27 @@
   "appTitle": "Tic Tac Toe",
   "playWithFriend": "Play with friend",
   "playWithAI": "Play with AI",
-  "reference": "Reference"
+  "reference": "Reference",
+  "withFriend": "👥 With friend",
+  "againstAI": "🤖 Against AI",
+  "difficultyLevel": "Difficulty:",
+  "difficultyEasy": "Easy",
+  "difficultyNormal": "Normal",
+  "difficultyImpossible": "Impossible",
+  "play": "Play",
+  "gameOver": "Game over",
+  "xWins": "X wins!",
+  "oWins": "O wins!",
+  "draw": "It's a draw!",
+  "turn": "Turn: {player}",
+  "@turn": {
+    "description": "Shows whose turn it is",
+    "parameters": {
+      "player": {
+        "type": "String"
+      }
+    }
+  },
+  "newGame": "New game",
+  "backToMenu": "Back to menu"
 }

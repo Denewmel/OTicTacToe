@@ -121,6 +121,90 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Reference'**
   String get reference;
+
+  /// No description provided for @withFriend.
+  ///
+  /// In en, this message translates to:
+  /// **'👥 With friend'**
+  String get withFriend;
+
+  /// No description provided for @againstAI.
+  ///
+  /// In en, this message translates to:
+  /// **'🤖 Against AI'**
+  String get againstAI;
+
+  /// No description provided for @difficultyLevel.
+  ///
+  /// In en, this message translates to:
+  /// **'Difficulty:'**
+  String get difficultyLevel;
+
+  /// No description provided for @difficultyEasy.
+  ///
+  /// In en, this message translates to:
+  /// **'Easy'**
+  String get difficultyEasy;
+
+  /// No description provided for @difficultyNormal.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal'**
+  String get difficultyNormal;
+
+  /// No description provided for @difficultyImpossible.
+  ///
+  /// In en, this message translates to:
+  /// **'Impossible'**
+  String get difficultyImpossible;
+
+  /// No description provided for @play.
+  ///
+  /// In en, this message translates to:
+  /// **'Play'**
+  String get play;
+
+  /// No description provided for @gameOver.
+  ///
+  /// In en, this message translates to:
+  /// **'Game over'**
+  String get gameOver;
+
+  /// No description provided for @xWins.
+  ///
+  /// In en, this message translates to:
+  /// **'X wins!'**
+  String get xWins;
+
+  /// No description provided for @oWins.
+  ///
+  /// In en, this message translates to:
+  /// **'O wins!'**
+  String get oWins;
+
+  /// No description provided for @draw.
+  ///
+  /// In en, this message translates to:
+  /// **'It\'s a draw!'**
+  String get draw;
+
+  /// Shows whose turn it is
+  ///
+  /// In en, this message translates to:
+  /// **'Turn: {player}'**
+  String turn(Object player);
+
+  /// No description provided for @newGame.
+  ///
+  /// In en, this message translates to:
+  /// **'New game'**
+  String get newGame;
+
+  /// No description provided for @backToMenu.
+  ///
+  /// In en, this message translates to:
+  /// **'Back to menu'**
+  String get backToMenu;
 }
 
 class _AppLocalizationsDelegate
