@@ -4,6 +4,7 @@ import '../logic/ai.dart';
 import '../models/game_state.dart';
 import '../widgets/board_widget.dart';
 import '../widgets/status_widget.dart';
+import '../l10n/generated/ottt_localizations.dart';
 
 class GameScreen extends StatefulWidget {
   final bool againstComputer;
@@ -52,16 +53,17 @@ class _GameScreenState extends State<GameScreen> {
   void _showEndDialogIfNeeded() {
     if (_controller.state.status == GameStatus.playing) return;
 
+    final strings = AppLocalizations.of(context);
     String message;
     switch (_controller.state.status) {
       case GameStatus.xWins:
-        message = 'Победили крестики!';
+        message = strings.xWins;
         break;
       case GameStatus.oWins:
-        message = 'Победили нолики!';
+        message = strings.oWins;
         break;
       case GameStatus.draw:
-        message = 'Ничья!';
+        message = strings.draw;
         break;
       default:
         return;
@@ -71,7 +73,7 @@ class _GameScreenState extends State<GameScreen> {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Игра окончена'),
+        title: Text(strings.gameOver),
         content: Text(message),
         actions: [
           TextButton(
@@ -80,14 +82,14 @@ class _GameScreenState extends State<GameScreen> {
               _controller.reset();
               setState(() {});
             },
-            child: const Text('Новая игра'),
+            child: Text(strings.newGame),
           ),
           TextButton(
             onPressed: () {
               Navigator.pop(ctx);
               Navigator.pop(context);
             },
-            child: const Text('В меню'),
+            child: Text(strings.backToMenu),
           ),
         ],
       ),
@@ -96,9 +98,10 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final strings = AppLocalizations.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Крестики-нолики'),
+        title: Text(strings.appTitle),
         centerTitle: true,
         actions: [
           IconButton(
@@ -107,7 +110,7 @@ class _GameScreenState extends State<GameScreen> {
               _controller.reset();
               setState(() {});
             },
-            tooltip: 'Новая игра',
+            tooltip: strings.newGame,
           ),
         ],
       ),
