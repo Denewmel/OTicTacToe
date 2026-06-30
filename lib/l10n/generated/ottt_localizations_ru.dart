@@ -21,46 +21,46 @@ class AppLocalizationsRu extends AppLocalizations {
   String get reference => 'Справка';
 
   @override
-  String get withFriend => '👥 With friend';
+  String get withFriend => '👥 С другом';
 
   @override
-  String get againstAI => '🤖 Against AI';
+  String get againstAI => '🤖 Против ИИ';
 
   @override
-  String get difficultyLevel => 'Difficulty:';
+  String get difficultyLevel => 'Уровень сложности:';
 
   @override
-  String get difficultyEasy => 'Easy';
+  String get difficultyEasy => 'Лёгкий';
 
   @override
-  String get difficultyNormal => 'Normal';
+  String get difficultyNormal => 'Нормальный';
 
   @override
-  String get difficultyImpossible => 'Impossible';
+  String get difficultyImpossible => 'Невозможный';
 
   @override
-  String get play => 'Play';
+  String get play => 'Играть';
 
   @override
-  String get gameOver => 'Game over';
+  String get gameOver => 'Игра окончена';
 
   @override
-  String get xWins => 'X wins!';
+  String get xWins => 'Победили крестики!';
 
   @override
-  String get oWins => 'O wins!';
+  String get oWins => 'Победили нолики!';
 
   @override
-  String get draw => 'It\'s a draw!';
+  String get draw => 'Ничья!';
 
   @override
   String turn(Object player) {
-    return 'Turn: $player';
+    return 'Ход: $player';
   }
 
   @override
-  String get newGame => 'New game';
+  String get newGame => 'Новая игра';
 
   @override
-  String get backToMenu => 'Back to menu';
+  String get backToMenu => 'В меню';
 }

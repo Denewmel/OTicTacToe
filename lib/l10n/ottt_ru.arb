@@ -3,5 +3,28 @@
   "appTitle": "Крестики Нолики",
   "playWithFriend": "Играть с другом",
   "playWithAI": "Играть против ИИ",
-  "reference": "Справка"
+  "reference": "Справка",
+  "withFriend": "👥 С другом",
+  "againstAI": "🤖 Против ИИ",
+  "difficultyLevel": "Уровень сложности:",
+  "difficultyEasy": "Лёгкий",
+  "difficultyNormal": "Нормальный",
+  "difficultyImpossible": "Невозможный",
+  "play": "Играть",
+  "gameOver": "Игра окончена",
+  "xWins": "Победили крестики!",
+  "oWins": "Победили нолики!",
+  "draw": "Ничья!",
+  "turn": "Ход: {player}",
+  "turn": "Ход: {player}",
+  "@turn": {
+    "description": "Показывает, чей сейчас ход",
+    "parameters": {
+      "player": {
+        "type": "String"
+      }
+    }
+  },
+  "newGame": "Новая игра",
+  "backToMenu": "В меню"
 }
