@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'player.dart';
 
 enum GameStatus { playing, xWins, oWins, draw }
@@ -8,5 +9,8 @@ class GameState {
 
   const GameState(this.currentPlayer, this.status);
 
-  factory GameState.initial() => const GameState(Player.X, GameStatus.playing);
+  factory GameState.initial() {
+    final firstPlayer = Random().nextBool() ? Player.X : Player.O;
+    return GameState(firstPlayer, GameStatus.playing);
+  }
 }

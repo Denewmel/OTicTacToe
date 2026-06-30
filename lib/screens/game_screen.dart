@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../logic/game_controller.dart';
 import '../logic/ai.dart';
 import '../models/game_state.dart';
+import '../models/player.dart';
 import '../widgets/board_widget.dart';
 import '../widgets/status_widget.dart';
 import '../l10n/generated/ottt_localizations.dart';
@@ -30,6 +31,19 @@ class _GameScreenState extends State<GameScreen> {
       againstComputer: widget.againstComputer,
       difficulty: widget.difficulty,
     );
+
+    _makeComputerFirstMoveIfNeeded();
+  }
+
+  void _makeComputerFirstMoveIfNeeded() {
+    if (widget.againstComputer &&
+        _controller.state.currentPlayer == Player.O) {
+      Future.delayed(const Duration(milliseconds: 400), () {
+        if (!mounted) return;
+        _controller.makeComputerMove();
+        setState(() {});
+      });
+    }
   }
 
   void _onCellTap(int index) {
@@ -81,6 +95,7 @@ class _GameScreenState extends State<GameScreen> {
               Navigator.pop(ctx);
               _controller.reset();
               setState(() {});
+               _makeComputerFirstMoveIfNeeded();
             },
             child: Text(strings.newGame),
           ),
@@ -109,6 +124,7 @@ class _GameScreenState extends State<GameScreen> {
             onPressed: () {
               _controller.reset();
               setState(() {});
+              _makeComputerFirstMoveIfNeeded();
             },
             tooltip: strings.newGame,
           ),
