@@ -63,4 +63,34 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get backToMenu => 'Back to menu';
+
+  @override
+  String get aboutGame => 'About the game';
+
+  @override
+  String get aboutGameDescription =>
+      'Tic Tac Toe is a classic game for two players, where opponents take turns placing X and O on a 3×3 grid. The first player to line up three of their symbols horizontally, vertically, or diagonally wins.';
+
+  @override
+  String get howToPlay => 'How to play';
+
+  @override
+  String get howToPlayDescription =>
+      'Tap on an empty cell to place your symbol (X or O). Players take turns until one of them lines up three symbols or the board is full (draw).';
+
+  @override
+  String get gameModes => 'Game modes';
+
+  @override
+  String get gameModesDescription =>
+      '• Against a friend: play together on one device.\n• Against AI: play against the computer with three difficulty levels — Easy, Normal and Impossible.';
+
+  @override
+  String get developer => 'Developer';
+
+  @override
+  String get sourceCode => 'Source code';
+
+  @override
+  String get license => 'License';
 }

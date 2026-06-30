@@ -25,5 +25,14 @@
     }
   },
   "newGame": "New game",
-  "backToMenu": "Back to menu"
+  "backToMenu": "Back to menu",
+  "aboutGame": "About the game",
+  "aboutGameDescription": "Tic Tac Toe is a classic game for two players, where opponents take turns placing X and O on a 3×3 grid. The first player to line up three of their symbols horizontally, vertically, or diagonally wins.",
+  "howToPlay": "How to play",
+  "howToPlayDescription": "Tap on an empty cell to place your symbol (X or O). Players take turns until one of them lines up three symbols or the board is full (draw).",
+  "gameModes": "Game modes",
+  "gameModesDescription": "• Against a friend: play together on one device.\n• Against AI: play against the computer with three difficulty levels — Easy, Normal and Impossible.",
+  "developer": "Developer",
+  "sourceCode": "Source code",
+  "license": "License"
 }

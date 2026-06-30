@@ -9,7 +9,7 @@ class AppLocalizationsRu extends AppLocalizations {
   AppLocalizationsRu([String locale = 'ru']) : super(locale);
 
   @override
-  String get appTitle => 'Крестики Нолики';
+  String get appTitle => 'Крестики-нолики';
 
   @override
   String get playWithFriend => 'Играть с другом';
@@ -63,4 +63,34 @@ class AppLocalizationsRu extends AppLocalizations {
 
   @override
   String get backToMenu => 'В меню';
+
+  @override
+  String get aboutGame => 'Об игре';
+
+  @override
+  String get aboutGameDescription =>
+      'Крестики-нолики — классическая игра для двух игроков, в которой соперники по очереди ставят X и O на поле 3×3. Побеждает тот, кто первым выстроит три своих символа в ряд по горизонтали, вертикали или диагонали.';
+
+  @override
+  String get howToPlay => 'Как играть';
+
+  @override
+  String get howToPlayDescription =>
+      'Нажимайте на свободную клетку, чтобы поставить свой символ (X или O). Игроки ходят по очереди, пока один из них не выстроит три символа в ряд или поле не заполнится (ничья).';
+
+  @override
+  String get gameModes => 'Режимы игры';
+
+  @override
+  String get gameModesDescription =>
+      '• Против друга: играйте вдвоём на одном устройстве.\n• Против ИИ: играйте против компьютера с тремя уровнями сложности — Лёгкий, Нормальный и Невозможный.';
+
+  @override
+  String get developer => 'Разработчик';
+
+  @override
+  String get sourceCode => 'Исходный код';
+
+  @override
+  String get license => 'Лицензия';
 }

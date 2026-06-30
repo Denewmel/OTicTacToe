@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../logic/ai.dart';
 import 'game_screen.dart';
+import 'reference_screen.dart';
 import '../l10n/generated/ottt_localizations.dart';
 
 class MenuScreen extends StatelessWidget {
@@ -96,7 +97,12 @@ class MenuScreen extends StatelessWidget {
             // 3. Справка
             ElevatedButton.icon(
               onPressed: () {
-             
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (_) => const ReferenceScreen(),
+                  ),
+                );
               },
               icon: const Icon(Icons.info_outline),
               label: Text(strings.reference),

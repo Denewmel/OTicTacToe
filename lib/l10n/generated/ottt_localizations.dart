@@ -205,6 +205,60 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Back to menu'**
   String get backToMenu;
+
+  /// No description provided for @aboutGame.
+  ///
+  /// In en, this message translates to:
+  /// **'About the game'**
+  String get aboutGame;
+
+  /// No description provided for @aboutGameDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Tic Tac Toe is a classic game for two players, where opponents take turns placing X and O on a 3×3 grid. The first player to line up three of their symbols horizontally, vertically, or diagonally wins.'**
+  String get aboutGameDescription;
+
+  /// No description provided for @howToPlay.
+  ///
+  /// In en, this message translates to:
+  /// **'How to play'**
+  String get howToPlay;
+
+  /// No description provided for @howToPlayDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'Tap on an empty cell to place your symbol (X or O). Players take turns until one of them lines up three symbols or the board is full (draw).'**
+  String get howToPlayDescription;
+
+  /// No description provided for @gameModes.
+  ///
+  /// In en, this message translates to:
+  /// **'Game modes'**
+  String get gameModes;
+
+  /// No description provided for @gameModesDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'• Against a friend: play together on one device.\n• Against AI: play against the computer with three difficulty levels — Easy, Normal and Impossible.'**
+  String get gameModesDescription;
+
+  /// No description provided for @developer.
+  ///
+  /// In en, this message translates to:
+  /// **'Developer'**
+  String get developer;
+
+  /// No description provided for @sourceCode.
+  ///
+  /// In en, this message translates to:
+  /// **'Source code'**
+  String get sourceCode;
+
+  /// No description provided for @license.
+  ///
+  /// In en, this message translates to:
+  /// **'License'**
+  String get license;
 }
 
 class _AppLocalizationsDelegate
