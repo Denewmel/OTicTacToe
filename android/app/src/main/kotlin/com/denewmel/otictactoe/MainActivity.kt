@@ -1,4 +1,4 @@
-package com.example.o_tic_tac_toe
+package com.denewmel.otictactoe
 
 import io.flutter.embedding.android.FlutterActivity
 
